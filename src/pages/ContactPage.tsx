@@ -1,4 +1,4 @@
-import { companyInfo, serviceOptions } from '../data/siteData';
+import { serviceOptions } from '../data/siteData';
 import { TrustBadges } from '../components/TrustBadges';
 
 const contactDetails = [

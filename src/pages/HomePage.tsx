@@ -81,9 +81,9 @@ export const HomePage = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     src={service.image}
                   />
-                  {service.badge && (
+                  {('badge' in service) && (
                     <div className="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-bold uppercase tracking-widest">
-                      {service.badge}
+                      {(service as { badge: string }).badge}
                     </div>
                   )}
                 </div>
