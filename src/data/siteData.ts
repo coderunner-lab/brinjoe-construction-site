@@ -1,3 +1,5 @@
+import { asset } from '../utils/assetPath';
+
 /* Navigation */
 export const navLinks = [
   { label: 'Home', path: '/' },
@@ -71,19 +73,19 @@ export const valueProps = [
 
 /* Project showcase images */
 export const showcaseImages = [
-  { src: '/images/kitchen.png', alt: 'Modern kitchen renovation', label: 'Kitchen Remodel' },
-  { src: '/images/bathroom.png', alt: 'Luxury bathroom renovation', label: 'Bathroom Renovation' },
-  { src: '/images/pergola.png', alt: 'Custom outdoor pergola', label: 'Outdoor Living' },
-] as const;
+  { src: asset('/images/kitchen.png'), alt: 'Modern kitchen renovation', label: 'Kitchen Remodel' },
+  { src: asset('/images/bathroom.png'), alt: 'Luxury bathroom renovation', label: 'Bathroom Renovation' },
+  { src: asset('/images/pergola.png'), alt: 'Custom outdoor pergola', label: 'Outdoor Living' },
+];
 
 /* Hero */
 export const heroData = {
   headline: 'Building Trust & Quality in OKC.',
   subheadline: 'Expert spray foam insulation, drywall, and painting services for residential and commercial projects. Serving Oklahoma City with precision and integrity.',
-  bgImage: '/images/hero.png',
+  bgImage: asset('/images/hero.png'),
   ctaPrimary: 'Request a Free Quote',
   ctaSecondary: 'View Our Services',
-} as const;
+};
 
 /* Service options for contact form */
 export const serviceOptions = [

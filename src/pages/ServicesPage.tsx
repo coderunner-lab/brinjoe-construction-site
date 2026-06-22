@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { TrustBadges } from '../components/TrustBadges';
+import { asset } from '../utils/assetPath';
 
 export const ServicesPage = () => {
   return (
@@ -78,7 +79,7 @@ export const ServicesPage = () => {
             </div>
             <div className="lg:col-span-7 order-1 lg:order-2">
               <div className="rounded-lg overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
-                <img alt="Professional drywall finishing" className="w-full h-full object-cover" src="/images/drywall.png" />
+                <img alt="Professional drywall finishing" className="w-full h-full object-cover" src={asset('/images/drywall.png')} />
               </div>
             </div>
           </div>
@@ -86,7 +87,7 @@ export const ServicesPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="rounded-lg overflow-hidden shadow-2xl -rotate-1 hover:rotate-0 transition-transform duration-500">
-                <img alt="High-end interior painting" className="w-full h-full object-cover" src="/images/painting.png" />
+                <img alt="High-end interior painting" className="w-full h-full object-cover" src={asset('/images/painting.png')} />
               </div>
             </div>
             <div className="lg:col-span-5">

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { navLinks, companyInfo } from '../data/siteData';
+import { asset } from '../utils/assetPath';
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +26,7 @@ export const Navbar = () => {
     >
       <div className="flex justify-between items-center px-5 md:px-margin-desktop max-w-[1440px] mx-auto w-full">
         <Link to="/" className="flex items-center shrink-0">
-          <img src="/images/logo.png" alt={companyInfo.name} className="h-16 md:h-20 w-auto" />
+          <img src={asset('/images/logo.png')} alt={companyInfo.name} className="h-16 md:h-20 w-auto" />
         </Link>
 
         {/* Desktop nav */}
